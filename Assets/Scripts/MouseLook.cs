@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//Source: http://wiki.unity3d.com/index.php/SmoothMouseLook
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System;
