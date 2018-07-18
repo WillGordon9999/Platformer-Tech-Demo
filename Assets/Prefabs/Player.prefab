@@ -200,12 +200,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   axes: 0
-  sensitivityX: 7.5
-  sensitivityY: 7.5
+  sensitivityX: 8.5
+  sensitivityY: 8.5
   minimumX: -360
   maximumX: 360
-  minimumY: -360
-  maximumY: 360
+  minimumY: -40
+  maximumY: 40
   frameCounter: 20
 --- !u!114 &114116449575108246
 MonoBehaviour:
