@@ -29,10 +29,10 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-	}
+    }
 	
 	// Update is called once per frame
-	void Update ()
+    void Update ()
     {
         SetVectors();
         Move();
