@@ -12,18 +12,18 @@ public class ScalingPlatform : MonoBehaviour
     bool scaleToNew;
     bool stop;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start ()
     {
         scaleToNew = true;
         stop = false;
         baseScale = transform.localScale;
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    }
+    
+    // Update is called once per frame
+    void Update ()
     {
-		if (stop)
+        if (stop)
         {
             if (Time.time - timeStopped >= stopTime)
                 stop = false;
@@ -47,7 +47,7 @@ public class ScalingPlatform : MonoBehaviour
                 transform.localScale = Vector3.MoveTowards(transform.localScale, baseScale, scaleRate);
             }
         }
-	}
+    }
 
     void TargetSwitch()
     {

@@ -12,17 +12,17 @@ public class MovingPlatform : MonoBehaviour
     Vector3 dest;
     Vector3 origin;
     
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start ()
     {
         stop = false;
         origin = transform.position;
         dest = transform.Find("Target").position;
         moveToDestination = true;
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    }
+    
+    // Update is called once per frame
+    void Update ()
     {
         if (stop)
         {
@@ -50,7 +50,7 @@ public class MovingPlatform : MonoBehaviour
                 transform.position = Vector3.MoveTowards(transform.position, origin, moveSpeed);
             }
         }
-	}
+    }
 
     void TargetSwitch()
     {
